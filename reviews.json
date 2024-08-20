@@ -1,0 +1,124 @@
+{
+    "reviews": [
+      {
+        "professor": "Dr. Emily Hartwell",
+        "subject": "Physics",
+        "stars": 4,
+        "review": "Engaging lectures and challenging assignments. Dr. Hartwell really knows her stuff!"
+      },
+      {
+        "professor": "Prof. Michael Chang",
+        "subject": "Literature",
+        "stars": 5,
+        "review": "Absolutely brilliant! Prof. Chang's passion for literature is contagious."
+      },
+      {
+        "professor": "Dr. Sarah Johnson",
+        "subject": "Biology",
+        "stars": 3,
+        "review": "Decent instructor, but the course material could be more organized."
+      },
+      {
+        "professor": "Prof. Robert Garcia",
+        "subject": "History",
+        "stars": 4,
+        "review": "Fascinating insights into historical events. Prof. Garcia makes history come alive."
+      },
+      {
+        "professor": "Dr. Lisa Thompson",
+        "subject": "Chemistry",
+        "stars": 2,
+        "review": "Difficult to follow lectures. More office hours would be helpful."
+      },
+      {
+        "professor": "Prof. David Wilson",
+        "subject": "Mathematics",
+        "stars": 5,
+        "review": "Exceptional teacher. Prof. Wilson breaks down complex concepts with ease."
+      },
+      {
+        "professor": "Dr. Jennifer Lee",
+        "subject": "Psychology",
+        "stars": 4,
+        "review": "Thought-provoking discussions and interesting research projects."
+      },
+      {
+        "professor": "Prof. Mark Anderson",
+        "subject": "Computer Science",
+        "stars": 3,
+        "review": "Knowledgeable but sometimes rushes through important topics."
+      },
+      {
+        "professor": "Dr. Rachel Green",
+        "subject": "Environmental Science",
+        "stars": 5,
+        "review": "Inspiring lecturer with a genuine passion for environmental issues."
+      },
+      {
+        "professor": "Prof. Thomas Brown",
+        "subject": "Economics",
+        "stars": 2,
+        "review": "Dry lectures and unclear expectations for assignments."
+      },
+      {
+        "professor": "Dr. Olivia Martinez",
+        "subject": "Sociology",
+        "stars": 4,
+        "review": "Engaging discussions on contemporary social issues. Very approachable."
+      },
+      {
+        "professor": "Prof. James Wilson",
+        "subject": "Philosophy",
+        "stars": 5,
+        "review": "Mind-expanding lectures. Prof. Wilson challenges students to think critically."
+      },
+      {
+        "professor": "Dr. Emma Taylor",
+        "subject": "Neuroscience",
+        "stars": 3,
+        "review": "Interesting subject matter, but lectures can be hard to follow at times."
+      },
+      {
+        "professor": "Prof. Daniel Kim",
+        "subject": "Art History",
+        "stars": 4,
+        "review": "Passionate about the subject and brings artworks to life with his descriptions."
+      },
+      {
+        "professor": "Dr. Sophia Patel",
+        "subject": "Political Science",
+        "stars": 5,
+        "review": "Excellent at explaining complex political theories and current events."
+      },
+      {
+        "professor": "Prof. Christopher Lee",
+        "subject": "Music Theory",
+        "stars": 2,
+        "review": "Seems disorganized and often unprepared for class."
+      },
+      {
+        "professor": "Dr. Natalie Rodriguez",
+        "subject": "Anthropology",
+        "stars": 4,
+        "review": "Fascinating course content and engaging field trip opportunities."
+      },
+      {
+        "professor": "Prof. Andrew Johnson",
+        "subject": "Business Administration",
+        "stars": 3,
+        "review": "Solid fundamentals, but could use more real-world examples."
+      },
+      {
+        "professor": "Dr. Jessica White",
+        "subject": "Genetics",
+        "stars": 5,
+        "review": "Brilliant researcher and educator. Makes complex concepts accessible."
+      },
+      {
+        "professor": "Prof. Samuel Clark",
+        "subject": "Film Studies",
+        "stars": 4,
+        "review": "Insightful analysis of films and engaging class discussions."
+      }
+    ]
+  }
