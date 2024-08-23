@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { Pinecone } from "@pinecone-database/pinecone";
-import Groq from "groq-sdk";
+import OpenAI from "openai";
 
 const systemPrompt = `
 You are a rate my professor agent to help students find classes, that takes in user questions and answers them.
@@ -13,9 +13,8 @@ export async function POST(req) {
     const pc = new Pinecone({
         apiKey: process.env.PINECONE_API_KEY,
     });
-
     const index = pc.index("rag").namespace("ns1");
-    const groq = new Groq();
+    const openai = new OpenAI();
 
     const text = data[data.length - 1].content;
     const embedding = await openai.embeddings.create({
@@ -32,8 +31,7 @@ export async function POST(req) {
 
     let resultString = "";
     results.matches.forEach((match) => {
-        resultString += `
-  Returned Results:
+        resultString += `\n
   Professor: ${match.id}
   Review: ${match.metadata.stars}
   Subject: ${match.metadata.subject}
@@ -45,18 +43,14 @@ export async function POST(req) {
     const lastMessageContent = lastMessage.content + resultString;
     const lastDataWithoutLastMessage = data.slice(0, data.length - 1);
 
-    const completion = await groq.chat.completions.create({
+    const completion = await openai.chat.completions.create({
         messages: [
             { role: "system", content: systemPrompt },
             ...lastDataWithoutLastMessage,
             { role: "user", content: lastMessageContent },
         ],
-        model: "llama3-70b-8192",
-        temperature: 1,
-        max_tokens: 1024,
-        top_p: 1,
+        model: "gpt-3.5-turbo",
         stream: true,
-        stop: null,
     });
 
     const stream = new ReadableStream({
